@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-image: url(images/bg.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+  gap: 3em;
+
+  padding: 10px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+
+  /*   
+  height: 100vh;
+  width: 100vw; */
+
+  /* background-image: url(images/IMG_4678.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.container div {
+  padding: 20px;
+  border: 2px solid rgba(221, 192, 180, 0.5);
+  border-radius: 10px;
+  background-color: rgba(221, 192, 180, 0.7);
+  /* background-color: rgba(255,193,204, 0.5) */
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  position: relative;
+
+  padding: 0;
+
+  background-color: rgba(221, 192, 180, 0);
+}
+.header h1 {
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: maroon;
+  color: rgb(219, 208, 208);
+
+  width: 50%;
+
+  margin-left: 25%;
+
+
+  /* position: absolute;
+  left: 10em;
+  top: 20px; */
+}
+
+.header .left {
+  max-width: 75px;
+  max-height: 75px;
+
+  float: left;
+
+  position: relative;
+  bottom: 10px;
+  left: 4em;
+}
+
+.header .right {
+  max-width: 75px;
+  max-height: 75px;
+
+  float: right;
+
+  position: relative;
+  bottom: 10px;
+  right: 4em;
+}
+/* .header img{
+  max-width: 75px;
+  max-height: 75px;
+
+  position: relative;
+  float: right;
+
+  bottom: 10px;
+  right: 15px;
+} */
+
+.about-us {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.about-us h2 {
+  text-align: center;
+  margin-bottom: 1em;
+
+  background-color: maroon;
+  color: rgb(219, 208, 208);
+
+  width: 100%;
+}
+
+.about-us p{
+  background-color: rgba(150,0,0,0.8);
+  padding: 15px;
+  color:  rgb(219, 208, 208);
+
+  border-radius: 20px;
+}
+
+.contact {
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.contact h2 {
+  text-align: center;
+  background-color: maroon;
+  color: rgb(219, 208, 208);
+
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+a:hover {
+  color: white;
+}
+
+.flavor {
+  /* width: 100%;
+margin-bottom: 1em; */
+
+  text-align: left;
+  grid-column-start: 3;
+  grid-column-end: 5;
+
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.flavor h2 {
+  background-color: maroon;
+  color: rgb(219, 208, 208);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.flavor img {
+  height: 50%;
+  width: 90%;
+
+  margin-top: 30px;
+  margin-left: 7px;
+  border: 20px double maroon;
+  border-radius: 15px;
+
+  min-height: 50%;
+  min-width: 90%;
+}
+
+/* .product{
+text-align: center;
+grid-r  ow-start: 4;
+grid-row-end: 6;
+
+grid-column-start: 1;
+grid-column-end: 5;
+} */
+
+.contact ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+.contact li {
+  margin: 30px;
+  margin-left: 10px;
+}
+.contact ul .ig::before {
+  content: "";
+  display: inline-block;
+
+  height: 30px;
+  width: 30px;
+  background-size: 30px;
+  background-image: url(images/instagram.png);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.contact ul .whatsapp::before {
+  content: "";
+  display: inline-block;
+
+  height: 30px;
+  width: 30px;
+  background-size: 30px;
+  background-image: url(images/whatsapp.png);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.contact ul .email::before {
+  content: "";
+  display: inline-block;
+
+  height: 30px;
+  width: 30px;
+  background-size: 30px;
+  background-image: url(images/email.png);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: center;
+  vertical-align: middle;
+}
+
+/* .ig{
+  list-style-type: none;
+  background-image: url(images/instagram.png);
+  background-color: red;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+} */
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 550px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  width: auto;
+
+  margin-top: -22px;
+  padding: 16px;
+
+  background-color: maroon;
+  color: white;
+
+  font-weight: bold;
+  font-size: 20px;
+
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0; 
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(70,0,0, 0.7)
+}
+
+.text {
+  color: white;
+  background-color: maroon;
+
+  font-size: 21px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 5.5px;
+  width: 50%;
+  left: 23%;
+  text-align: center;
+}
+
+.text-container {
+  margin: auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  background-color: maroon;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
